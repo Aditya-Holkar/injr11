@@ -1,135 +1,164 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PratikN_Photography</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-    .w3-row-padding img {margin-bottom: 12px}
+
+<head>
+  <title>PratikN_Photography</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .w3-row-padding img {
+      margin-bottom: 12px
+    }
+
     /* Set the width of the sidebar to 120px */
-    .w3-sidebar {width: 120px;background: #222;}
+    .w3-sidebar {
+      width: 120px;
+      background: #222;
+    }
+
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {margin-left: 120px}
+    #main {
+      margin-left: 120px
+    }
+
     /* Remove margins from "page content" on small screens */
-    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-    </style>
-  </head>
+    @media only screen and (max-width: 600px) {
+      #main {
+        margin-left: 0
+      }
+    }
+  </style>
+</head>
+
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src=".\86735670_2669252793192507_1414241849064816640_n(3).jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src=".\86735670_2669252793192507_1414241849064816640_n(3).jpg" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
   </div>
-</div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Pratik Nivangune</h1>
-    <p>Photographer and Image Editor.</p>
-    <img src=".\336679827_895871058188104_8457393085625925359_n(4).jpg" alt="boy" class="w3-image" width="992" height="1108">
-  </header>
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+  <div>
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Pratik Nivangune</h1>
+      <p>Photographer and Image Editor.</p>
+      <img src=".\336679827_895871058188104_8457393085625925359_n(4).jpg" alt="boy" class="w3-image" width="992"
+        height="1108">
+    </header>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey"> Introduction </h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>I am a photographer and image editor with a passion for capturing and enhancing the beauty of the world. 
-    I have over five years of experience in various genres of photography, such as portrait, landscape, wildlife, and event photography.
-    I also have advanced skills in Photoshop, Lightroom, and other editing software. 
-    I enjoy creating stunning images that tell a story, evoke emotions, and inspire viewers. 
-    Whether you need a professional headshot, a memorable wedding album, or a captivating portfolio, 
-    I can help you achieve your goals with my creativity and expertise.
-    </p>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:97%"></div>
-    </div>
-    <p class="w3-wide">Image Editing</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        Shoots
-      </div> 
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">25+</span><br>
-        Projects Done
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-24" id="about">
+      <h2 class="w3-text-light-grey"> Introduction </h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>I am a photographer and image editor with a passion for capturing and enhancing the beauty of the world.
+        I have over five years of experience in various genres of photography, such as portrait, landscape, wildlife,
+        and event photography.
+        I also have advanced skills in Photoshop, Lightroom, and other editing software.
+        I enjoy creating stunning images that tell a story, evoke emotions, and inspire viewers.
+        Whether you need a professional headshot, a memorable wedding album, or a captivating portfolio,
+        I can help you achieve your goals with my creativity and expertise.
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+      <p class="w3-wide">Photography</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:97%"></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        Happy Clients
+      <p class="w3-wide">Image Editing</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:90%"></div>
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">150+</span><br>
-        Meetings
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">11+</span><br>
+          Shoots
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">25+</span><br>
+          Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">55+</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">150+</span><br>
+          Meetings
+        </div>
       </div>
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <a href=".\48018391277_f3279c4143_o.jpg" download=“SampleImg.jpg”>Sample of My Work</a>
+      </button>
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-    <a href=".\48018391277_f3279c4143_o.jpg" download=“SampleImg.jpg”>Sample of My Work</a>
-    </button>
-    </div>
-    
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Response From Clients</h3>  
+    <h3 class="w3-padding-24 w3-text-light-grey">Response From Clients</h3>
     <img src=".\f13057320.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Ashutosh Mane.</span> <b>Electrical Engineer.</b></p>
-    <p>Thank you so much for the amazing photos you took for me. I am blown away by your talent and professionalism. 
-    You have a great eye for detail and composition, and you captured the essence of the moment perfectly.
-     The photos are crisp, vibrant, and full of life.
-     I love how you edited them to enhance their quality and mood.</p><br>
-    
+    <p>Thank you so much for the amazing photos you took for me. I am blown away by your talent and professionalism.
+      You have a great eye for detail and composition, and you captured the essence of the moment perfectly.
+      The photos are crisp, vibrant, and full of life.
+      I love how you edited them to enhance their quality and mood.</p><br>
+
     <img src=".\f12987680.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Niranjan Holkar.</span> <b>Mechanical Engineer.</b></p>
-    <p>You have exceeded my expectations and delivered more than I could have hoped for. I appreciate your hard work and dedication to your craft. 
-    You are a true artist and a pleasure to work with. 
-    I will definitely recommend you to anyone who needs a photographer.</p>
-  <!-- End About Section -->
+    <p>You have exceeded my expectations and delivered more than I could have hoped for. I appreciate your hard work and
+      dedication to your craft.
+      You are a true artist and a pleasure to work with.
+      I will definitely recommend you to anyone who needs a photographer.</p>
+    <!-- End About Section -->
   </div>
-  
+
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-   <h2 id="B" class="w3-button w3-round-xxlarge w3-small w3-light-grey">Click to View My Work</h2>
+  <div class="w3-padding-24 w3-content" id="photos">
+    <h2 id="B" class="w3-button w3-round-xxlarge w3-small w3-light-grey">Click to View My Work</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
@@ -143,23 +172,23 @@
         <img src=".\PicsArt_08-12-12.35.11.jpg" style="width:100%">
         <img src=".\f61369848.jpg" style="width:100%">
         <img src=".\f71525864.jpg" style="width:100%">
-        <img src= ".\f71626656.jpg" style="width:100%">
-       
+        <img src=".\f71626656.jpg" style="width:100%">
+
       </div>
 
       <div class="w3-half">
-        
-                <img src=".\f62677888.jpg" style="width:100%">
-                        <img src=".\f62744520.jpg" style="width:100%">
-                                <img src=".\f68061392.jpg" style="width:100%">
-                                        <img src=".\f68071464.jpg" style="width:100%">
-                                                <img src=".\f70110144.jpg" style="width:100%">
-                                                        <img src=".\f70699080.jpg" style="width:100%">
-                                                              
+
+        <img src=".\f62677888.jpg" style="width:100%">
+        <img src=".\f62744520.jpg" style="width:100%">
+        <img src=".\f68061392.jpg" style="width:100%">
+        <img src=".\f68071464.jpg" style="width:100%">
+        <img src=".\f70110144.jpg" style="width:100%">
+        <img src=".\f70699080.jpg" style="width:100%">
+
       </div>
-    <!-- End photo grid -->
+      <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
+    <!-- End Portfolio Section -->
   </div>
 
   <!-- Contact Section -->
@@ -172,38 +201,42 @@
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91 8237287190</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: injr7@gmail.com</p>
     </div><br>
-<style>
-#A{
-    margin-left: 0.5cm;
-}
+    <style>
+      #A {
+        margin-left: 0.5cm;
+      }
+    </style>
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <a id="A" href="https://www.facebook.com/pratik.nivangune.5"><i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a id="A" href="https://www.instagram.com/injr11_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a id="A"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      <a id="A" href="https://www.flickr.com/photos/145545935@N02/"><i
+          class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+      <a id="A" href="https://unsplash.com/@injr11"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a id="A" href="https://www.linkedin.com/in/pratik-nivangune-85b913223/"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <p class="w3-small"></p>
+      <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.instagram.com/injr11/"
+        target="_blank">Check Personal Account</a>
+      <!-- End footer -->
+    </footer>
 
-</style>
-<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-  <a id="A" href="https://www.facebook.com/pratik.nivangune.5"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a id="A" href="https://www.instagram.com/injr11_/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <a id="A"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
-  <a id="A" href="https://www.flickr.com/photos/145545935@N02/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
-  <a id="A" href="https://unsplash.com/@injr11"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a id="A" href="https://www.linkedin.com/in/pratik-nivangune-85b913223/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
- <p class="w3-small"></p>
- <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.instagram.com/injr11/" target="_blank">Check Personal Account</a> 
- <!-- End footer -->
-</footer>
-
-<!-- END PAGE CONTENT -->
+    <!-- END PAGE CONTENT -->
+  </div>
 </div>
-
 </body>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
-  <script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js"
+  integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script>
 
-$('#photo').fadeOut();
-$('#B').click(function(){
-$('#photo').slideToggle();
-})
-  </script>
+  $('#photo').fadeOut();
+  $('#B').click(function () {
+    $('#photo').slideToggle();
+  })
+</script>
 
 
 </html>
