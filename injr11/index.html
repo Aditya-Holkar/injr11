@@ -167,11 +167,11 @@
   
   <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+   <center> <h2 id="B" class="w3-text-light-grey">My Photos</h2></button>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <div id="photo" class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src=".\IMG_20200825_170227_417.jpg" style="width:100%">
         <img src=".\LRM_EXPORT_13862737407189_20190812_112527843-02.jpeg.jpg" style="width:100%">
@@ -210,23 +210,6 @@
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 91 8237287190</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: injr7@gmail.com</p>
     </div><br>
-    <!--<p>Let's get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>->
-  <!-- End Contact Section -->
-  </div>
-  
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
 <style>
 #A{
     margin-left: 0.5cm;
@@ -249,4 +232,25 @@
 </div>
 
 </body>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+  <script>
+  //  $('selector').action()            ----- syntax   
+  
+//   $('.A').click(function(){    
+// $('#carouselExampleCaptions').toggle(2000);
+
+
+// })
+$('#photo').fadeOut();
+$('#B').click(function(){
+$('#phpto').slideToggle();
+})
+
+
+
+  </script>
+
+
 </html>
